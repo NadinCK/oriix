@@ -1,0 +1,129 @@
+<apex:page id="orgPage" tabStyle="Configuration__tab">
+    <apex:stylesheet value="{!$Resource.genesis__MFIStyles}" />
+    <script type="text/javascript"
+        src="{!URLFOR($Resource.sidebarMenuTemplate)}" />  
+    <script type="text/javascript"
+        src="{!URLFOR($Resource.jQueryFiles, 'js/jquery-1.8.3.min.js')}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+    <style>
+        .subDataImport {
+            left: 199px !important;
+            width: 150px !important;
+        }
+        div.createNewModule.sidebarModule.navMenu {
+            padding: 5px !important;
+        } 
+        .subRules {
+            left: 199px !important;
+            width: 150px !important;
+        } 
+    </style>
+    <script>
+    var j$ = jQuery.noConflict();    
+    j$(document).ready(function(){
+     
+       j$('.companyManagement').append(j$(addMenuHeader('Company Setup...','70px')));
+       j$('.companyManagement .quickloanmenu').append(addMenuItemWithLink('{!URLFOR($Action.Branch_Location__c.New)}','branchLocationMru','','New Location'));       
+    <!--   j$('.companyManagement .quickloanmenu').append(addMenuItemWithLink('{!URLFOR($Action.company__c.New)}','branchMru','','New Company'));  -->
+       j$('.companyManagement .quickloanmenu').append(addMenuItemWithLink('{!URLFOR("branchManagement")}','viewBranchMru','','Add/View Company'));
+      
+       j$('.applicationSetup').append(j$(addMenuHeader('Application Setup...','70px')));
+       j$('.applicationSetup .quickloanmenu').append(addMenuItemWithLink('{!URLFOR($Action.Application_Wizard_Config__c.List, $ObjectType.Application_Wizard_Config__c)}','AppConfWizardMru','','Application Configuration Wizard'));
+    <!--   j$('.applicationSetup .quickloanmenu').append(addMenuItemWithLink('{!URLFOR($Action.Loan_Product__c.List, $ObjectType.Loan_Product__c)}','LendingProductMru','','Lending Product')); -->
+       j$('.applicationSetup .quickloanmenu').append(addMenuItemWithLink('{!URLFOR($Action.Document_Master__c.List, $ObjectType.Document_Master__c)}','DocumentsMru','','Documents'));
+       
+       j$('.conversionSetup').append(j$(addMenuHeader('Conversion Setup...','50px')));
+       j$('.conversionSetup .quickloanmenu').append(addMenuItemWithLink('{!URLFOR($Action.Conversion_Mapping__c.List, $ObjectType.Conversion_Mapping__c)}','conversionMapping','','Conversion Mapping')); 
+       j$('.conversionSetup .quickloanmenu').append();
+       
+       j$('.creditSetup').append(j$(addMenuHeader('Credit Setup...','110px')));
+       j$('.creditSetup .quickloanmenu').append(addMenuItemWithLink('{!URLFOR($Action.Rule__c.List, $ObjectType.Rule__c)}','RulesMru','','Rules'));
+       j$('.creditSetup .quickloanmenu').append(addMenuItemWithLink('{!URLFOR($Action.Scorecard__c.List, $ObjectType.Scorecard__c)}','ScorecardMru','','Scorecards')); 
+       j$('.creditSetup .quickloanmenu').append(addMenuItemWithLink('{!URLFOR($Action.Credit_Rating_Matrix__c.List, $ObjectType.Credit_Rating_Matrix__c)}','CreditMatrixMenu','','Credit Rating Matrix')); 
+       j$('.creditSetup .quickloanmenu').append(addMenuItemWithLink('{!URLFOR($Action.Transaction_Categorization__c.List, $ObjectType.Transaction_Categorization__c)}','TransactionCatMru','','Yodlee Transaction Categorization'));     
+
+       j$('.productManagement').append(j$(addMenuHeader('Pricing Setup...','90px')));
+       j$('.productManagement .quickloanmenu').append(addMenuItemWithLink('rateCardHeader','rateCardMru','','Rate Card'));     
+       j$('.productManagement .quickloanmenu').append(addMenuItemWithLink('quickQuoteOptions','quickQuoteOptionMru','','Financing Options'));
+       j$('.productManagement .quickloanmenu').append(addMenuItemWithLink('{!URLFOR($Action.clcommon__Fee_Definition__c.List, $ObjectType.clcommon__Fee_Definition__c)}','FeeDefMru','','Fee Definition'));
+
+       j$('.dealRoomSetup').append(j$(addMenuHeader('Deal Room Setup...','210px')));
+       j$('.dealRoomSetup .quickloanmenu').append(addMenuItemWithLink('{!URLFOR($Action.clcommon__Legal_Entity__c.List, $ObjectType.clcommon__Legal_Entity__c)}','LegalEntityTypeTypeMru','','Legal Entity'));
+       j$('.dealRoomSetup .quickloanmenu').append(addMenuItemWithLink('{!URLFOR($Action.clcommon__Party_Type__c.List, $ObjectType.clcommon__Party_Type__c)}','PartyTypeMru','','Party Type'));
+       j$('.dealRoomSetup .quickloanmenu').append(addMenuItemWithLink('{!URLFOR($Action.clcommon__CL_Product__c.List, $ObjectType.clcommon__CL_Product__c)}','CLProductCatMru','','CL Product'));
+       j$('.dealRoomSetup .quickloanmenu').append(addMenuItemWithLink('{!URLFOR($Action.clcommon__CL_Purpose__c.List, $ObjectType.clcommon__CL_Purpose__c)}','CLPurposeCatMru','','CL Purpose'));
+       j$('.dealRoomSetup .quickloanmenu').append(addMenuItemWithLink('{!URLFOR($Action.clcommon__Collateral_Category__c.List, $ObjectType.clcommon__Collateral_Category__c)}','CollateralCatMru','','Collateral Category'));
+       j$('.dealRoomSetup .quickloanmenu').append(addMenuItemWithLink('{!URLFOR($Action.clcommon__Collateral_Type__c.List, $ObjectType.clcommon__Collateral_Type__c)}','CLCollateralTypeMru','','Collateral Type'));
+       j$('.dealRoomSetup .quickloanmenu').append(addMenuItemWithLink('{!URLFOR($Action.Document_Category__c.List, $ObjectType.Document_Category__c)}','DocumentCatMru','','Document Category'));
+       j$('.dealRoomSetup .quickloanmenu').append(addMenuItemWithLink('{!URLFOR($Action.Document_Config_for_Category__c.List, $ObjectType.Document_Config_for_Category__c)}','DocumentFlowMru','','Document Flow Config'));
+       j$('.dealRoomSetup .quickloanmenu').append(addMenuItemWithLink('{!URLFOR("appraisalAdministration")}','PartyMru','','Appraisal Administration'));
+       
+       j$('.taskListSetup').append(j$(addMenuHeader('Dashboard Setup...','140px'))); 
+       j$('.taskListSetup .quickloanmenu').append(addMenuItemWithLink('{!URLFOR($Action.Department__c.List, $ObjectType.Department__c)}','DepartmentMru','','Department'));
+       j$('.taskListSetup .quickloanmenu').append(addMenuItemWithLink('{!URLFOR($Action.Task_Setup__c.List, $ObjectType.Task_Setup__c)}','taskSetupMru','','Task Template'));
+       j$('.taskListSetup .quickloanmenu').append(addMenuItemWithLink('{!URLFOR($Action.Product_Department_Junction__c.List, $ObjectType.Product_Department_Junction__c)}','ProdDeptTaskMru','','Product Department Task Association'));
+       
+       j$('.covenantSetup').append(j$(addMenuHeader('Covenant Setup...','50px'))); 
+       j$('.covenantSetup .quickloanmenu').append(addMenuItemWithLink('{!URLFOR($Action.clcommon__Covenant_Definition__c.List, $ObjectType.clcommon__Covenant_Definition__c)}','CovenantDefMru','','Covenant Definition'));
+              
+       j$('.policySetup').append(j$(addMenuHeader('Policy Exception Setup...','30px'))); 
+       j$('.policySetup .quickloanmenu').append(addMenuItemWithLink('{!URLFOR($Action.Policy_Exception_Definition__c.List, $ObjectType.Policy_Exception_Definition__c)}','CovenantDefMru','','Policy Exception Definition'));
+     
+       j$('.mainMenu').live('mouseenter', function() {
+       j$('.subMenu').hide();
+       j$(this).next('.subMenu').show();
+       });
+    
+       j$(document).mouseup(function (e) {
+            var container = j$(".navMenu #createNewMenu");
+            if (container.has(e.target).length === 0) {
+                j$('.subMenu').hide();
+            }
+       });
+    
+    });   
+    
+</script>
+    <style>
+</style>
+    <apex:form id="setupForm">
+        <div style="min-width: 800px">
+            <div class="mfiflexBlock"
+                style="height: 420px; float: left; width: 32%; margin-right: 1%;">
+                <div class="mfiflexBlockHeading" id="bottomWrapper">
+                    <h1 class="heading">Company and Application Setup</h1>
+                </div> 
+                <div class="collapsible sidebar companyManagement" id="sidebarDiv"
+                    style="margin: auto;margin-top:20px"></div>
+                <div class="collapsible sidebar applicationSetup" id="sidebarDiv"
+                    style="margin: auto;"></div>
+                <div class="collapsible sidebar conversionSetup" id="sidebarDiv"
+                    style="margin: auto;"></div>
+                <div class="collapsible sidebar covenantSetup" id="sidebarDiv"
+                    style="margin: auto;"></div>    
+            </div>
+            <div class="mfiflexBlock"
+                style="height: 420px; float: left; width: 32%; margin-right: 1%;">
+                <div class="mfiflexBlockHeading" id="bottomWrapper">
+                    <h1 class="heading">Credit and Pricing Setup</h1>
+                </div>
+                <div class="collapsible sidebar creditSetup" id="sidebarDiv"
+                    style="margin: auto; margin-top: 30px"></div>
+                <div class="collapsible sidebar productManagement" id="sidebarDiv"
+                    style="margin: auto;"></div> 
+                <div class="collapsible sidebar policySetup" id="sidebarDiv"
+                    style="margin: auto;"></div>     
+            </div> 
+            <div class="mfiflexBlock"
+                style="height: 420px; float: left; width: 32%; margin-right: 1%;">
+                <div class="mfiflexBlockHeading" id="bottomWrapper">
+                    <h1 class="heading">Deal Room and Dashboard Setup</h1>
+                </div>
+                <div class="collapsible sidebar dealRoomSetup" id="sidebarDiv"
+                    style="margin: auto; margin-top: 30px"></div>
+                <div class="collapsible sidebar taskListSetup" id="sidebarDiv"
+                    style="margin: auto;"></div>    
+            </div>
+        </div>
+    </apex:form>
+</apex:page>

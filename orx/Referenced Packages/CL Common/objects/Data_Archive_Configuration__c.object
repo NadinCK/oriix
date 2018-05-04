@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>This object is used to define the configuration parameters which will be used by archiving job to perform the archiving for specified objects.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>To indicate whether to process this configuration or not automatically.</inlineHelpText>
+        <label>Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Archive_Data_Older_Than__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to store the number of days beyond which records must be archived. In other words, if this field says &apos;n&apos; days, any transaction older than &apos;n&apos; days must be archived.</inlineHelpText>
+        <label>Archive Data Older Than</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Archive_Detail_Object_Fully__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Flag to indicate to archive the detail object records of for which this object is the master object. If the object is archived fully no summary records will be created.</inlineHelpText>
+        <label>Archive Detail Object Fully</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Batch_Size__c</fullName>
+        <defaultValue>200</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Batch Size for the Data Archival Job which is going to process this configuration.</inlineHelpText>
+        <label>Batch Size</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Create_Summary_Transaction__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to indicate if a summary transaction must be created for the just archived transactions. Note that for any object only one summary transaction is maintained at any time. Only applicable where Is_Master_Object_Record__c is False</inlineHelpText>
+        <label>Create Summary Transaction</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Custom_Summary_Class__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Fully Qualified class name to handle the summary record creation for archived record.</inlineHelpText>
+        <label>Custom Summary Class</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Processed_Date_Time__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Field to indicate when was last time archiving for this configuration record was completed successfully.</inlineHelpText>
+        <label>Last Processed Date Time</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Object_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The API name of the object which need to be archived. If the name doesn&apos;t contain any namespace prefix then the namespace of the Org will be assumed.</inlineHelpText>
+        <label>Object Name</label>
+        <length>100</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parent_Configuration__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This field is used to store the reference to the parent configuration. This is needed because we store the configuration for the child objects in the same configuration table.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to store the reference to the parent configuration for handling master-detail relationships.</inlineHelpText>
+        <label>Parent Configuration</label>
+        <referenceTo>Data_Archive_Configuration__c</referenceTo>
+        <relationshipLabel>Data Archive Configurations</relationshipLabel>
+        <relationshipName>Child_Configurations</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Parent_Relationship_Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The field which points the parent record, this will useful to filter records belonging to same parent and attach summary record to that. Required if Is_Master_Object_Record__c is false and Create_Summary_Transaction__c is TRUE</inlineHelpText>
+        <label>Parent Relationship Field Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Transaction_Date_Field_API_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The API name of the date field on the object to be archived which will be used for filtering the object records to be archived.</inlineHelpText>
+        <label>Transaction Date Field API Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Data Archive Configuration</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Active__c</columns>
+        <columns>Object_Name__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Last_Processed_Date_Time__c</columns>
+        <columns>Archive_Detail_Object_Fully__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>ARC-{000000}</displayFormat>
+        <label>Configuration ID</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Data Archive Configurations</pluralLabel>
+    <recordTypes>
+        <fullName>Detail_Object_Configuration</fullName>
+        <active>true</active>
+        <description>To indicate that this is a detail object configuration</description>
+        <label>Detail Object Configuration</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Master_Object_Configuration</fullName>
+        <active>true</active>
+        <description>To indicate that this is a master object configuration</description>
+        <label>Master Object Configuration</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Standalone_Object_Configuration</fullName>
+        <active>true</active>
+        <description>To indicate that this is a standalone object configuration</description>
+        <label>Standalone Object Configuration</label>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Object_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Active__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Archive_Detail_Object_Fully__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Parent_Configuration__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Transaction_Date_Field_API_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>RECORDTYPE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Archive_Data_Older_Than__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

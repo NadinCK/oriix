@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Category_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Category Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>BUSINESS INCOME</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>PERSONAL INCOME</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>OTHER SOURCES</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BUSINESS EXPENSES</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LIVING EXPENSES</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>DISCRETIONARY EXPENSES</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Transaction_Category__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Transaction Category</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Transaction Categorization</label>
+    <listViews>
+        <fullName>fields</fullName>
+        <columns>NAME</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Category_Type__c</columns>
+        <columns>Transaction_Category__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>fields</label>
+    </listViews>
+    <nameField>
+        <displayFormat>TC - {000000}</displayFormat>
+        <label>Transaction Categorization Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Transaction Categorization</pluralLabel>
+    <recordTypes>
+        <fullName>Credit</fullName>
+        <active>true</active>
+        <label>Credit</label>
+        <picklistValues>
+            <picklist>Category_Type__c</picklist>
+            <values>
+                <fullName>BUSINESS INCOME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTHER SOURCES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PERSONAL INCOME</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Debit</fullName>
+        <active>true</active>
+        <label>Debit</label>
+        <picklistValues>
+            <picklist>Category_Type__c</picklist>
+            <values>
+                <fullName>BUSINESS EXPENSES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DISCRETIONARY EXPENSES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LIVING EXPENSES</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

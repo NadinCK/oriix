@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Asset_Class</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Asset_Class</shortDescription>
+        <value>Asset_Class</value>
+    </labels>
+    <labels>
+        <fullName>CL001100</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PE_DATE_VALIDATION_ERROR</shortDescription>
+        <value>Process Enforcement expiry date should be after start date</value>
+    </labels>
+    <labels>
+        <fullName>CL001101</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PE_NAME_NOT_SELECTED_ERROR</shortDescription>
+        <value>Process Enforcement name must be selected</value>
+    </labels>
+    <labels>
+        <fullName>CL001102</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PE_DATE_FUTURE_MESSAGE</shortDescription>
+        <value>Date is in future. Validation will be done on the date of application</value>
+    </labels>
+    <labels>
+        <fullName>CL001103</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PE_VALIDATION_ERROR</shortDescription>
+        <value>Validation failed. Please check errors in Validation</value>
+    </labels>
+    <labels>
+        <fullName>CL001104</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VALIDATION_SUCCESSFUL_MESSAGE</shortDescription>
+        <value>Validation successful</value>
+    </labels>
+    <labels>
+        <fullName>CL001105</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PE_NOT_FOUND_ERROR</shortDescription>
+        <value>No Process Enforcement found. Please create a Process Enforcement.</value>
+    </labels>
+    <labels>
+        <fullName>CL001106</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PE_IMPLEMENTING_CLASS_NOT_FOUND_ERROR</shortDescription>
+        <value>Process Enforcement implementing class not found.</value>
+    </labels>
+    <labels>
+        <fullName>CL001107</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PE_ACTIONS_NOT_FOUND_ERROR</shortDescription>
+        <value>No Process Enforcement Actions implementation found.</value>
+    </labels>
+    <labels>
+        <fullName>CL001108</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DUPLICATE_PE_ACTION_ERROR</shortDescription>
+        <value>Same process enforcement {0} can not be specified twice.</value>
+    </labels>
+    <labels>
+        <fullName>CL001109</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PE_ACTION_NOT_SELECTED_ERROR</shortDescription>
+        <value>Select atleast one {0}</value>
+    </labels>
+    <labels>
+        <fullName>CL001110</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BLANK_PE_ACTION_ERROR</shortDescription>
+        <value>Process Enforcement {0} name can not be left blank</value>
+    </labels>
+    <labels>
+        <fullName>CL001111</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PE_ACTION_ACTIVATION_EVENT_ERROR</shortDescription>
+        <value>Activate action on : Apply/Expiry must be selected</value>
+    </labels>
+    <labels>
+        <fullName>CL001112</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PE_ACTION_NOT_SUPPORTED_ERROR</shortDescription>
+        <value>Process Enforcement action {0} not supported</value>
+    </labels>
+    <labels>
+        <fullName>CL001114</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PE_ACTION_PARAMETER_VALUE_ERROR</shortDescription>
+        <value>Parameter value must be given for {0}</value>
+    </labels>
+    <labels>
+        <fullName>CL001130</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PE_NOT_ACTIVE_ERROR</shortDescription>
+        <value>Process Enforcement is not active for this Process Enforcement detail</value>
+    </labels>
+    <labels>
+        <fullName>CL001131</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PE_REVOKE_IMPLEMENTATION_ERROR</shortDescription>
+        <value>Process Enforcement revoke implementing functionality not present.</value>
+    </labels>
+    <labels>
+        <fullName>CL001132</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PE_REVOKE_FUTURE_DATE_ERROR</shortDescription>
+        <value>Process Enforcement can not be revoked. Revoke date is in future.</value>
+    </labels>
+    <labels>
+        <fullName>CL001139</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FR_OVERLAPPING_PERIOD_ERROR</shortDescription>
+        <value>Start Date cannot overlap with existing rates</value>
+    </labels>
+    <labels>
+        <fullName>CL001140</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>REQUIRED_PARAMS_MISSING</shortDescription>
+        <value>Required parameters are missing.</value>
+    </labels>
+    <labels>
+        <fullName>CL001141</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>INCORRECT_USER_CREDENTIALS</shortDescription>
+        <value>Username or Password is incorrect.</value>
+    </labels>
+    <labels>
+        <fullName>CL001142</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PASSWORD_DOES_NOT_MATCH</shortDescription>
+        <value>Password does not match</value>
+    </labels>
+    <labels>
+        <fullName>CL001143</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PASSWORD_RESET_FAILED</shortDescription>
+        <value>Unable to reset password</value>
+    </labels>
+    <labels>
+        <fullName>CL001144</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UNABLE_TO_FIND_PROVIDER</shortDescription>
+        <value>Unable to find/instantiate implementation provider class</value>
+    </labels>
+    <labels>
+        <fullName>CL001145</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>STRUCTURE_JSON_PARSE_FAILED</shortDescription>
+        <value>Unable to parse the structure JSON</value>
+    </labels>
+    <labels>
+        <fullName>CL001146</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UNABLE_TO_SET_PASSWORD</shortDescription>
+        <value>Unable to set new password</value>
+    </labels>
+    <labels>
+        <fullName>CL001147</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UPSERTS_FAILED</shortDescription>
+        <value>Required disclosure(s) not accepted</value>
+    </labels>
+    <labels>
+        <fullName>CL001148</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>INVALID_STRUCTURE_JSON</shortDescription>
+        <value>Where clause is required in a Component Structure</value>
+    </labels>
+    <labels>
+        <fullName>CL001150</fullName>
+        <categories>LOG</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>APEX_QUEUE_LOGGING</shortDescription>
+        <value>Started: Job {0}  with Job Id = {1}</value>
+    </labels>
+    <labels>
+        <fullName>CL001151</fullName>
+        <categories>LOG</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>APEX_QUEUE_LOGGING</shortDescription>
+        <value>Ended: Job {0}  with Job Id = {1}</value>
+    </labels>
+    <labels>
+        <fullName>CL001152</fullName>
+        <categories>Exception</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>APEX_QUEUE_LOGGING</shortDescription>
+        <value>Job {0} with Job Id = {1} failed due to DMLException</value>
+    </labels>
+    <labels>
+        <fullName>CL001153</fullName>
+        <categories>Exception</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>APEX_QUEUE_LOGGING</shortDescription>
+        <value>DML error in processing. Message: {0}</value>
+    </labels>
+    <labels>
+        <fullName>CL001154</fullName>
+        <categories>Exception</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>APEX_QUEUE_LOGGING</shortDescription>
+        <value>Unknown error in queue processing. Message: {0}</value>
+    </labels>
+    <labels>
+        <fullName>CL001161</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DAG_NOT_EXIST</shortDescription>
+        <value>DAG does not exist</value>
+    </labels>
+    <labels>
+        <fullName>CL001162</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CANNOT_DISPATCH_EXISTING_JOB</shortDescription>
+        <value>Cannot dispatch an already existing DAG job</value>
+    </labels>
+    <labels>
+        <fullName>CL001163</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>INVALID_DAG</shortDescription>
+        <value>Invalid DAG structure</value>
+    </labels>
+    <labels>
+        <fullName>CL001164</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CANNOT_MODIFY_RUNNING_DAG</shortDescription>
+        <value>Cannot modify when DAG is running</value>
+    </labels>
+    <labels>
+        <fullName>CL001165</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>JOB_LABEL_PREEXIST</shortDescription>
+        <value>Job Labels already exist</value>
+    </labels>
+    <labels>
+        <fullName>CL001166</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>INVALID_JOB_LABEL</shortDescription>
+        <value>Invalid job label: {0}</value>
+    </labels>
+    <labels>
+        <fullName>CL001167</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>INVALID_PIPELINE</shortDescription>
+        <value>Invalid pipeline specification</value>
+    </labels>
+    <labels>
+        <fullName>CL001168</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NEGATIVE_INSTANCES</shortDescription>
+        <value>Number of Instances cannot be negative</value>
+    </labels>
+    <labels>
+        <fullName>CL001169</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>INVALID_QUERY</shortDescription>
+        <value>Query is invalid</value>
+    </labels>
+    <labels>
+        <fullName>CL001170</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>INVALID_FAILTYPE</shortDescription>
+        <value>Invalid FailType specified (check your case)</value>
+    </labels>
+    <labels>
+        <fullName>CL001171</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>INVALID_BATCH_SIZE</shortDescription>
+        <value>Invalid Batch Size</value>
+    </labels>
+    <labels>
+        <fullName>CL001172</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_JOBS_TO_DISABLE</shortDescription>
+        <value>No jobs specified to disable</value>
+    </labels>
+    <labels>
+        <fullName>CL001173</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_JOBS_TO_ENABLE</shortDescription>
+        <value>No jobs specified to enable</value>
+    </labels>
+    <labels>
+        <fullName>CL001174</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DAG_ALREADY_EXISTS</shortDescription>
+        <value>Dag already exists</value>
+    </labels>
+    <labels>
+        <fullName>CL001175</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>INVALID_DEPENDENCY_SPECIFIED</shortDescription>
+        <value>Invalid dependency specified ({0} -&gt; {1})</value>
+    </labels>
+    <labels>
+        <fullName>CL001176</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>INVALID_DEPENDENCY_SPECIFIED_2</shortDescription>
+        <value>Cannot specify no dependency for a job with existing dependencies</value>
+    </labels>
+    <labels>
+        <fullName>CL001177</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>INVALID_DAG_MERGE_PARAMS</shortDescription>
+        <value>Invalid params for merging DAGs</value>
+    </labels>
+    <labels>
+        <fullName>CL001178</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>INVALID_DEPENDENCY_SPECIFIED_3</shortDescription>
+        <value>Cannot specify empty list for dependency deletion</value>
+    </labels>
+    <labels>
+        <fullName>CL001179</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ERROR_WHILE_SCHEDULING_JOB</shortDescription>
+        <value>Error while scheduling the Job: {0}</value>
+    </labels>
+    <labels>
+        <fullName>CL001180</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CANNOT_MODIFY_CRON_ID</shortDescription>
+        <value>Modification of CronID not supported (only deletion is allowed)</value>
+    </labels>
+    <labels>
+        <fullName>CL001181</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NULL_DEPENDENCY_LIST</shortDescription>
+        <value>({0}) Dependencylist is null</value>
+    </labels>
+    <labels>
+        <fullName>CL001182</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>INVALID_PARAMS_SPECIFIED</shortDescription>
+        <value>({0}) Invalid params specified</value>
+    </labels>
+    <labels>
+        <fullName>CL001183</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ERROR_CONVERTING_PARAMS</shortDescription>
+        <value>Error converting params</value>
+    </labels>
+    <labels>
+        <fullName>CL001184</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ERROR_PARSING_PARAMS</shortDescription>
+        <value>Error parsing params</value>
+    </labels>
+    <labels>
+        <fullName>CL001185</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MAX_DAILY_LIMIT_EXCEDDED</shortDescription>
+        <value>Max daily Limit excedded for {0}</value>
+    </labels>
+    <labels>
+        <fullName>CL001186</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NOT_DEFINED_FOR_MODE</shortDescription>
+        <value>{0} not defined for the given mode of communication</value>
+    </labels>
+    <labels>
+        <fullName>CL001187</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_NOTIFICATIONS</shortDescription>
+        <value>No {0} Notifications to be sent</value>
+    </labels>
+    <labels>
+        <fullName>CL001188</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NOT_SENT</shortDescription>
+        <value>Unable to Send {0}</value>
+    </labels>
+    <labels>
+        <fullName>CL001189</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VALUE NOT SPECIFIED</shortDescription>
+        <value>{0} Value not specified</value>
+    </labels>
+    <labels>
+        <fullName>CL001190</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NOTIFICATION_SENT</shortDescription>
+        <value>Notification Sent Sucessully</value>
+    </labels>
+    <labels>
+        <fullName>CL001191</fullName>
+        <categories>EXCEPTION</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TEMPLATE_NOT_FOUND</shortDescription>
+        <value>Specified Template is not configured</value>
+    </labels>
+    <labels>
+        <fullName>CL001192</fullName>
+        <categories>EXCEPTION</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FAILED_TO_MATCH_THE_DEFAULT_VALUE</shortDescription>
+        <value>Multiple records found for the given value {0}</value>
+    </labels>
+    <labels>
+        <fullName>CL001193</fullName>
+        <categories>EXCEPTION</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RELATION_STRUCTURE_NOT_FOUND</shortDescription>
+        <value>Unable to find the relation structure by the field id {0} in parent structure {1}</value>
+    </labels>
+    <labels>
+        <fullName>CL001194</fullName>
+        <categories>EXCEPTION</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UPSERT_DUPLICATED_METADATA_EXCEPTION</shortDescription>
+        <value>{1} already exists in {0}. Name must be unique.</value>
+    </labels>
+    <labels>
+        <fullName>CL001195</fullName>
+        <categories>EXCEPTION</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EMPTY_METADATA_EXCEPTION</shortDescription>
+        <value>{0} is null or empty.</value>
+    </labels>
+    <labels>
+        <fullName>CL001196</fullName>
+        <categories>EXCEPTION</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UNKNOWN_METADATA_EXCEPTION</shortDescription>
+        <value>Unknown metadata type {0}.</value>
+    </labels>
+    <labels>
+        <fullName>CL001197</fullName>
+        <categories>EXCEPTION</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FETCH_NAVIGATION_STRUCTURE_EXCEPTION</shortDescription>
+        <value>No permission to access Navigation Structure.</value>
+    </labels>
+    <labels>
+        <fullName>CL001198</fullName>
+        <categories>EXCEPTION</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FETCH_COMPONENT_STRUCTURE_EXCEPTION</shortDescription>
+        <value>No permission to access Component Structure.</value>
+    </labels>
+    <labels>
+        <fullName>CL001199</fullName>
+        <categories>EXCEPTION</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UNABLE_TO_FETCH_NAVIGATION_STRUCTURE_EXCEPTION</shortDescription>
+        <value>Unable to fetch Component structure with name : {0}</value>
+    </labels>
+    <labels>
+        <fullName>CL001200</fullName>
+        <categories>EXCEPTION</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UNABLE_TO_FETCH_COMPONENT_STRUCTURE_EXCEPTION</shortDescription>
+        <value>Unable to fetch Navigation structure with name : {0}</value>
+    </labels>
+    <labels>
+        <fullName>CL001201</fullName>
+        <categories>EXCEPTION</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FIELD_TYPE_NOT_FOUND</shortDescription>
+        <value>Unable to find {1} field in {0} object.</value>
+    </labels>
+    <labels>
+        <fullName>CL001202</fullName>
+        <categories>EXCEPTION</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MOCK_DATA_NOT_FOUND</shortDescription>
+        <value>Mock data : {0} is not found</value>
+    </labels>
+    <labels>
+        <fullName>CL001203</fullName>
+        <categories>EXCEPTION</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CUSTOM_REMOTE_ACTION_RESPONSE_FAILED</shortDescription>
+        <value>Unable to handle empty value.</value>
+    </labels>
+    <labels>
+        <fullName>CL001204</fullName>
+        <categories>EXCEPTION</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UNABLE TO INSERT MESSAGE</shortDescription>
+        <value>Failed to insert Message__c</value>
+    </labels>
+    <labels>
+        <fullName>CL009001</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UNSUPPORTED SOBJECT TYPE</shortDescription>
+        <value>SObject type {0} is not supported by this unit of work</value>
+    </labels>
+    <labels>
+        <fullName>CL009002</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UNDEFINED RELATIONSHIP BETWEEN SOBJECTS</shortDescription>
+        <value>Relationship between SObject types {0} and {1} is not registered in this unit of work</value>
+    </labels>
+    <labels>
+        <fullName>CL009003</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>REGISTERING NEW RECORDS</shortDescription>
+        <value>Only new records can be registered as new</value>
+    </labels>
+    <labels>
+        <fullName>CL009004</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>REGISTERING UPDATE RECORDS</shortDescription>
+        <value>New records cannot be registered for update</value>
+    </labels>
+    <labels>
+        <fullName>CL009005</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>REGISTERING DELETE RECORDS</shortDescription>
+        <value>New records cannot be registered for deletion</value>
+    </labels>
+    <labels>
+        <fullName>CL_Product</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL_Product</shortDescription>
+        <value>CL_Product</value>
+    </labels>
+    <labels>
+        <fullName>CL_Purpose</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL_Purpose</shortDescription>
+        <value>CL_Purpose</value>
+    </labels>
+    <labels>
+        <fullName>COMMUNICATION_TYPE_NOT_ALLOWED</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>COMMUNICATION_TYPE_NOT_ALLOWED</shortDescription>
+        <value>Communication type {0} is not allowed type</value>
+    </labels>
+    <labels>
+        <fullName>Collateral_Category</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Collateral_Category</shortDescription>
+        <value>Collateral_Category</value>
+    </labels>
+    <labels>
+        <fullName>Collateral_Type</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Collateral_Type</shortDescription>
+        <value>Collateral_Type</value>
+    </labels>
+    <labels>
+        <fullName>Covenant_Definition</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Covenant_Definition</shortDescription>
+        <value>Covenant_Definition</value>
+    </labels>
+    <labels>
+        <fullName>Fee_Definition</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Fee_Definition</shortDescription>
+        <value>Fee_Definition</value>
+    </labels>
+    <labels>
+        <fullName>Legal_Entity</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Legal_Entity</shortDescription>
+        <value>Legal_Entity</value>
+    </labels>
+    <labels>
+        <fullName>NON_ID_TYPE_TARGET_ID</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NON_ID_TYPE_TARGET_ID</shortDescription>
+        <value>Target Id should be of type Id</value>
+    </labels>
+    <labels>
+        <fullName>NOTIFICATION_SEND_FAILED</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NOTIFICATION_SEND_FAILED</shortDescription>
+        <value>Unable to send notification</value>
+    </labels>
+    <labels>
+        <fullName>Party_Type</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Party_Type</shortDescription>
+        <value>Party_Type</value>
+    </labels>
+    <labels>
+        <fullName>TARGET_ID_NULL</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TARGET_ID_NULL</shortDescription>
+        <value>Target Id should not be null</value>
+    </labels>
+    <labels>
+        <fullName>TEMPLATENAME_MISSING</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TEMPLATENAME_MISSING</shortDescription>
+        <value>Email template name is required to send email notification</value>
+    </labels>
+    <labels>
+        <fullName>TEMPLATE_CONFIGURATION_NOT_FOUND</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TEMPLATE_CONFIGURATION_NOT_FOUND</shortDescription>
+        <value>No template configuration found</value>
+    </labels>
+</CustomLabels>

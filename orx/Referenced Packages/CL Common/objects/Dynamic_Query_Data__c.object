@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Aggregate_Function__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specifies which aggregate function to be used, eg. COUNT(Id)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies which aggregate function to be used, eg. COUNT(Id)</inlineHelpText>
+        <label>Aggregate Function</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AVG</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>COUNT</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>MAX</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>MIN</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SUM</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>COUNT_DISTINCT</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Alias__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specifier an alias for the selected field or aggregate function</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifier an alias for the selected field or aggregate function</inlineHelpText>
+        <label>Alias</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Expression_Left__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Specifies left hand side part of an expression when joining two dynamic query data records</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies left hand side part of an expression when joining two dynamic query data records</inlineHelpText>
+        <label>Expression Left</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Left Expression must be Dynamic Query Data with Filter = EXPRE</errorMessage>
+            <filterItems>
+                <field>$Source.Filter_Type__c</field>
+                <operation>equals</operation>
+                <value>EXPRE</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Dynamic_Query_Data__c</referenceTo>
+        <relationshipLabel>Dynamic Query Data (Expression Left)</relationshipLabel>
+        <relationshipName>Dynamic_Queries_Left</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Expression_Right__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Specifies right hand side part of an expression when joining two dynamic query data records</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies right hand side part of an expression when joining two dynamic query data records</inlineHelpText>
+        <label>Expression Right</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Right Expression must be Dynamic Query Data with Filter = EXPRE</errorMessage>
+            <filterItems>
+                <field>$Source.Filter_Type__c</field>
+                <operation>equals</operation>
+                <value>EXPRE</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Dynamic_Query_Data__c</referenceTo>
+        <relationshipLabel>Dynamic Query Data (Expression Right)</relationshipLabel>
+        <relationshipName>Dynamic_Queries_Right</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>External_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <label>External Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Field_Data_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specifier data type of the selected field or aggregate function</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifier data type of the selected field or aggregate function</inlineHelpText>
+        <label>Field Data Type</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specifies API name of the selected field</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies API name of the selected field</inlineHelpText>
+        <label>Field Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Filter_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specifies type for record. It can be either Select Field(field which need to be selected in the query) or Expression(means fields or records which will be used as a part of Where Clause/Start With/Connect By)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies type for record. It can be either Select Field(field which need to be selected in the query) or Expression(means fields or records which will be used as a part of Where Clause/Start With/Connect By)</inlineHelpText>
+        <label>Filter Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>SELECT_FIELD</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>EXPRE</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Operator__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specifies operator to be used</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies operator to be used</inlineHelpText>
+        <label>Operator</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>&lt;</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>&gt;</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>=</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>!=</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>&lt;=</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>&gt;=</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>IN</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LIKE</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>AND</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>OR</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>INCLUDES</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>EXCLUDES</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Parent_Query__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specifies parent dynamic query record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies parent dynamic query record</inlineHelpText>
+        <label>Parent Query</label>
+        <referenceTo>Dynamic_Query__c</referenceTo>
+        <relationshipLabel>Dynamic Query Data</relationshipLabel>
+        <relationshipName>Dynamic_Query_Data</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Value__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Specifies parameter record reference</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies parameter record reference</inlineHelpText>
+        <label>Value</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>No parameters are defined for the query. Please create a new parameter</errorMessage>
+            <filterItems>
+                <field>$Source.Parent_Query__c</field>
+                <operation>equals</operation>
+                <valueField>Dynamic_Query_Parameter__c.Parent_Query__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Dynamic_Query_Parameter__c</referenceTo>
+        <relationshipLabel>Dynamic Query Data (Value)</relationshipLabel>
+        <relationshipName>Dynamic_Querys</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Dynamic Query Data</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Filter_Type__c</columns>
+        <columns>Field_Name__c</columns>
+        <columns>Alias__c</columns>
+        <columns>Expression_Left__c</columns>
+        <columns>Operator__c</columns>
+        <columns>Expression_Right__c</columns>
+        <columns>Value__c</columns>
+        <columns>Parent_Query__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>Clause-{0000}</displayFormat>
+        <label>Dynamic Query Data Id</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Dynamic Query Data</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>Alias__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Aggregate_Function__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Field_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Field_Data_Type__c</lookupDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Alias__c</searchFilterFields>
+        <searchFilterFields>Aggregate_Function__c</searchFilterFields>
+        <searchFilterFields>Field_Name__c</searchFilterFields>
+        <searchFilterFields>Field_Data_Type__c</searchFilterFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>RequiredFieldsForExpression</fullName>
+        <active>true</active>
+        <description>Expression with field name operator value OR expressionLeft and expressionRight</description>
+        <errorConditionFormula>AND(ISPICKVAL(Filter_Type__c, &apos;EXPRE&apos;),
+ OR(
+ AND(
+  ISBLANK( Field_Name__c ) ,
+  ISPICKVAL( Operator__c , &apos;&apos;) ,
+  ISBLANK( Value__c ) 
+) ,
+ AND(
+ ISBLANK( Expression_Left__c ) ,
+ ISPICKVAL( Operator__c , &apos;&apos;) ,
+ ISBLANK( Expression_Right__c ) 
+) 
+) 
+)</errorConditionFormula>
+        <errorMessage>For EXPRE filter, either enter Field Name, Operator and Value or Left Expression, Operator and Right Expression</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SelectClauseGeneral</fullName>
+        <active>true</active>
+        <description>In case of select clause, all fields except fieldvalue and/or parameter should be empty</description>
+        <errorConditionFormula>AND(ISPICKVAL(Filter_Type__c, &apos;SELECT_FIELD&apos;),
+    OR( 
+        NOT(ISBLANK( Expression_Left__c )),
+        NOT(ISBLANK( Expression_Right__c )),
+        NOT(ISBLANK(TEXT(Operator__c))),
+        AND(
+            ISBLANK(Field_Name__c),
+            ISBLANK(TEXT(Operator__c)),
+            ISBLANK(Value__c) 
+        )
+    )
+)</errorConditionFormula>
+        <errorMessage>For SELECT FIELD filter, Field Name, Alias must be filled. Aggregation can be selected too. Other fields must be empty</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SelectClauseWithField</fullName>
+        <active>true</active>
+        <description>Select clause with field should be field, alias</description>
+        <errorConditionFormula>AND(ISPICKVAL(Filter_Type__c ,&apos;SELECT_FIELD&apos;),
+    OR(ISBLANK(Field_Name__c),ISBLANK( Alias__c ))     
+)</errorConditionFormula>
+        <errorMessage>Either Field Name or Alias is missing</errorMessage>
+    </validationRules>
+</CustomObject>

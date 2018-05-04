@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Scorecard_Object_Reference__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Scorecard Object Reference</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Scorecard__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Scorecard</label>
+        <referenceTo>Scorecard__c</referenceTo>
+        <relationshipLabel>Execution Criteria</relationshipLabel>
+        <relationshipName>Execution_Criteria</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Task_Setup_Object_Reference__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Task Setup Object Reference</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Task_Setup__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Task Setup</label>
+        <referenceTo>Task_Setup__c</referenceTo>
+        <relationshipLabel>Execution Criteria</relationshipLabel>
+        <relationshipName>Execution_Criteria</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <recordTypes>
+        <fullName>Scorecard</fullName>
+        <active>true</active>
+        <label>Scorecard</label>
+        <picklistValues>
+            <picklist>clcommon__Matching_Type__c</picklist>
+            <values>
+                <fullName>%21%3D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%3C</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%3C%3D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%3D%3D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%3E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%3E%3D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BETWEEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONTAINS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DOES NOT CONTAIN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ENDS WITH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NOT IN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>STARTS WITH</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Task_Setup</fullName>
+        <active>true</active>
+        <label>Task Setup</label>
+        <picklistValues>
+            <picklist>clcommon__Matching_Type__c</picklist>
+            <values>
+                <fullName>%21%3D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%3C</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%3C%3D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%3D%3D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%3E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%3E%3D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BETWEEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONTAINS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DOES NOT CONTAIN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ENDS WITH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NOT IN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>STARTS WITH</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+</CustomObject>

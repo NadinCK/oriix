@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Connect_By__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Used in Hierarchical Queries.It specifies the relationship between parent rows and child rows of the hierarchy.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used in Hierarchical Queries.It specifies the relationship between parent rows and child rows of the hierarchy.</inlineHelpText>
+        <label>Connect By</label>
+        <referenceTo>Dynamic_Query_Data__c</referenceTo>
+        <relationshipLabel>Dynamic Queries (Connect By)</relationshipLabel>
+        <relationshipName>ConnectBy_Queries</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>External_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <label>External Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>From_Object__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specifies Salesforce Object API name</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies Salesforce Object API name</inlineHelpText>
+        <label>From Object</label>
+        <length>100</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Group_By__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specifies group by clause for the query.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies group by clause for the query.</inlineHelpText>
+        <label>Group By</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Order_By__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specifies how to order queries records</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies how to order queries records</inlineHelpText>
+        <label>Order By</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Query_Json__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Json format to capture query. This is for internal use only</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Json format to capture query. This is for internal use only</inlineHelpText>
+        <label>Query Json</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Query_Name__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>Specifies an identifier for query</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies an identifier for query</inlineHelpText>
+        <label>Query Name</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Record_Limit__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specifies number of records to be queried.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies number of records to be queried.</inlineHelpText>
+        <label>Record Limit</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Start_With__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Used in Hierarchical Query. It specifies root record(s) query condition.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used in Hierarchical Query. It specifies root record(s) query condition.</inlineHelpText>
+        <label>Start With</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Dynamic Query Data must belong to this query and filter type should be Expression</errorMessage>
+            <filterItems>
+                <field>Dynamic_Query_Data__c.Filter_Type__c</field>
+                <operation>equals</operation>
+                <value>EXPRE</value>
+            </filterItems>
+            <filterItems>
+                <field>Dynamic_Query_Data__c.Parent_Query__r.Id</field>
+                <operation>equals</operation>
+                <valueField>$Source.Id</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Dynamic_Query_Data__c</referenceTo>
+        <relationshipLabel>Dynamic Queries (Start With)</relationshipLabel>
+        <relationshipName>StartWith_Queries</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Where_Clause__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Specifies where clause for the query.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies where clause for the query.</inlineHelpText>
+        <label>Where Clause</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Where Clause must be Dynamic Query Data with Filter = EXPRE</errorMessage>
+            <filterItems>
+                <field>Dynamic_Query_Data__c.Filter_Type__c</field>
+                <operation>equals</operation>
+                <value>EXPRE</value>
+            </filterItems>
+            <filterItems>
+                <field>Dynamic_Query_Data__c.Parent_Query__r.Id</field>
+                <operation>equals</operation>
+                <valueField>$Source.Id</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Dynamic_Query_Data__c</referenceTo>
+        <relationshipLabel>Dynamic Queries</relationshipLabel>
+        <relationshipName>Dynamic_Query_Data</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Dynamic Query</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>From_Object__c</columns>
+        <columns>Query_Name__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>QUERY-{0000}</displayFormat>
+        <label>Dynamic Query Id</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Dynamic Queries</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>Query_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>From_Object__c</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Query_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>From_Object__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Alphanumeric_Query_Name</fullName>
+        <active>true</active>
+        <description>Query Name can only contain numbers and alphabets</description>
+        <errorConditionFormula>NOT(REGEX(Query_Name__c,&apos;[a-zA-Z0-9]+&apos;))</errorConditionFormula>
+        <errorMessage>Query Name is an alphanumeric field</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Validate_Query</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Validate Query</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/13.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/10.0/apex.js&quot;)} 
+
+var nsPrefix = &quot;{!$Setup.CL_Platform_Settings__c.Namespace_Prefix__c}&quot;; 
+if(nsPrefix &amp;&amp; nsPrefix != &apos;&apos;){ 
+    nsPrefix = nsPrefix + &apos;.&apos; ; 
+} 
+
+var queryId = &quot;{!Dynamic_Query__c.Id}&quot;;
+var className = nsPrefix + &quot;CustomButtonAction&quot;; 
+var methodName = &quot;validateQuery&quot;; 
+sforce.apex.execute(className,
+                    methodName,
+                    {queryId:queryId});
+window.location.reload();</url>
+    </webLinks>
+</CustomObject>

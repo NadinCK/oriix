@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>CL009001</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UNSUPPORTED SOBJECT TYPE</shortDescription>
+        <value>SObject type {0} is not supported by this unit of work</value>
+    </labels>
+    <labels>
+        <fullName>CL009002</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UNDEFINED RELATIONSHIP BETWEEN SOBJECTS</shortDescription>
+        <value>Relationship between SObject types {0} and {1} is not registered in this unit of work</value>
+    </labels>
+    <labels>
+        <fullName>CL009003</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>REGISTERING NEW RECORDS</shortDescription>
+        <value>Only new records can be registered as new</value>
+    </labels>
+    <labels>
+        <fullName>CL009004</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>REGISTERING UPDATE RECORDS</shortDescription>
+        <value>New records cannot be registered for update</value>
+    </labels>
+    <labels>
+        <fullName>CL009005</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>REGISTERING DELETE RECORDS</shortDescription>
+        <value>New records cannot be registered for deletion</value>
+    </labels>
+    <labels>
+        <fullName>CL009006</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NULL HIERARCHY</shortDescription>
+        <value>Object Hierarchy instance is NULL</value>
+    </labels>
+    <labels>
+        <fullName>CL009007</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NULL NAME FOR UNIT OF WORK</shortDescription>
+        <value>Name cannot be NULL for Unit Of Work</value>
+    </labels>
+    <labels>
+        <fullName>CL009008</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>INSUFFICIENT ACCESS TO CREATE</shortDescription>
+        <value>Insufficient access to create {0}</value>
+    </labels>
+    <labels>
+        <fullName>CL009009</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>INSUFFICIENT ACCESS TO UPDATE</shortDescription>
+        <value>Insufficient access to update {0}</value>
+    </labels>
+    <labels>
+        <fullName>CL009010</fullName>
+        <categories>ERROR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>INSUFFICIENT ACCESS TO DELETE</shortDescription>
+        <value>Insufficient access to delete {0}</value>
+    </labels>
+</CustomLabels>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>This object will be used to store Factory class name in CL-Platform for different packages after PostInstallManager is run.
+    This object is used by only CLS packages and no dependency should be taken by other packages without understanding implications of backward compatibility break</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Action_Message__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Action Message</inlineHelpText>
+        <label>Action Message</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Action_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field contains list of all actions which need to be enforced</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select all actions which need to be enforced</inlineHelpText>
+        <label>Action Name</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Change Interest Rate</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Suspend Charges</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Enable Charges</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Suspend ACH</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Enable ACH</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Stop Accrual</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Resume Accrual</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Suspend Communication</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Resume Communication</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Suspend Disbursal</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Resume Disbursal</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Suppress Credit Reporting</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Resume Credit Reporting</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Reset Delinquency Status</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Action_Result__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Result of action</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Result of action</inlineHelpText>
+        <label>Action Result</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Success</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Failure</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Activation_Event__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Event for which Process Enforcement Action became active</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the event on Process Enforcement</inlineHelpText>
+        <label>Activation Event</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Apply</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Expiry</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Revoke</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>NameSpace__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Name space for action</inlineHelpText>
+        <label>Package Name Identifier</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Object_Id_Str__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Object ID in String form</inlineHelpText>
+        <label>Object ID</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Object_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of SObject Type</inlineHelpText>
+        <label>Object Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Process_Enforcement_Detail__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Process Enforcement Detail applied</inlineHelpText>
+        <label>Process Enforcement Detail</label>
+        <referenceTo>Process_Enforcement_Detail__c</referenceTo>
+        <relationshipName>Process_Enforcement_Details</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Process Enforcement Action Result</label>
+    <nameField>
+        <displayFormat>PEAR-{00000000}</displayFormat>
+        <label>Process Enforcement Action Result Id</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Process Enforcement Action Results</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

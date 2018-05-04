@@ -1,0 +1,1 @@
+[QVAR0] SELECT Id FROM Credit_Memo__c  WHERE Application__c = '{pv0}' ORDER BY CreatedDate DESC LIMIT 1;

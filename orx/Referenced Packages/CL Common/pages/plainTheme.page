@@ -1,0 +1,2 @@
+<apex:page rendered="{!$Setup.CL_Platform_Settings__c.Theme_Name__c == 'Plain'}">
+</apex:page>

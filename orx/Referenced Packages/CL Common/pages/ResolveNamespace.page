@@ -1,0 +1,12 @@
+<apex:page >
+    <script>
+        var nsPrefix = "{!JSENCODE($Setup.CL_Platform_Settings__c.Namespace_Prefix__c)}";
+        console.log(nsPrefix);
+        if(nsPrefix){
+            nsPrefix = nsPrefix;
+        }else{
+            nsPrefix = '';
+        }
+        window.commonprefix = nsPrefix;
+    </script>
+</apex:page>

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <content>manageTaskSetup</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>manageTaskSetup</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Assign_Parallel_Task_To__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>If a task is a parallel task, then who should it be assigned to initially.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If a task is a parallel task, then who should it be assigned to initially?</inlineHelpText>
+        <label>Assign Parallel Task To</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Task_Setup</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Auto_Close__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Is the task an auto close task or not?</description>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL( Type__c , &apos;MANUAL&apos;), false , true)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>false if type = &quot; MANUAL&quot;, otherwise true.</inlineHelpText>
+        <label>Auto Close</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Detailed description for the task. This field is mapped to “Description” field of the task.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Detailed description for the task. This field is mapped to “Description” field of the task.</inlineHelpText>
+        <label>Description</label>
+        <length>32000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Evaluation_Expression_For_Execution__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Evaluation Expression For  Execution</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>External_ID__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Is_Parallel__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Is the task going to be an parallel task? Parallel tasks are created when the application is created</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Is it a parallel task?</inlineHelpText>
+        <label>Is Parallel</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Mandatory__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Boolean field which determines if this task needs to be completed before the user can submit the application to next department</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Determines if the task created from this setup needs to be completed before the user can submit the application to next department</inlineHelpText>
+        <label>Mandatory</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Next_Task_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of the task which should be created after this task is closed. Required in cases such as LOI. Please note creating another task after this is not included in regular framework, should be handled separately.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of the task which should be created after this task is closed. Required in cases such as LOI</inlineHelpText>
+        <label>Next Task Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Object_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Object Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Priority__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Priority of the task - High, Normal,Low</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Priority of the task</inlineHelpText>
+        <label>Priority</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>High</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Normal</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Low</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Task_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A short name of the task. This is copied to “Subject” field of task</description>
+        <externalId>false</externalId>
+        <inlineHelpText>A short name of the task. This is copied to “Subject” field of task</inlineHelpText>
+        <label>Task Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Tasks can be manual or auto close. Manual tasks are the ones where user is required to explicitly close the task. Auto close task get closed automatically when the desired action is completed. 
+MANUAL → Selected for manual tasks
+PULL CREDIT → Selected for credit pull auto closed tasks
+FETCH TRANSACTIONS → Selected for yodlee bank transactions</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Tasks can be manual or auto close depending on the type.Select &quot;MANUAL&quot; for manual tasks and rest for auto close</inlineHelpText>
+        <label>Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>MANUAL</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>PULL CREDIT</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>FETCH TRANSACTIONS</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>LOI</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>days_until_due_date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>No of days to close the task created from this setup.
+&gt;= 0 → sets due date on task as current date plus value set
+null → no due date is set
+&lt; 0 → sets due date as expected closing date of application minus the value</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of days to close this tasks either from present date(+ve number) or number of days before which the task needs to be closed from the expected close date on application(-ve number)</inlineHelpText>
+        <label># days until due date</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Task Setup</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Task_Name__c</columns>
+        <columns>Description__c</columns>
+        <columns>Priority__c</columns>
+        <columns>Mandatory__c</columns>
+        <columns>Auto_Close__c</columns>
+        <columns>Type__c</columns>
+        <columns>days_until_due_date__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>TSU-{00000000}</displayFormat>
+        <label>Task Setup Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Task Setup</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Task_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Description__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Priority__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Mandatory__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Auto_Close__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Task_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Description__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Type__c</lookupDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Task_Name__c</searchFilterFields>
+        <searchFilterFields>Type__c</searchFilterFields>
+        <searchFilterFields>Mandatory__c</searchFilterFields>
+        <searchResultsAdditionalFields>Task_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Description__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Type__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>LOI_NEXT_TASK_NAME</fullName>
+        <active>true</active>
+        <description>For LOI type task setups, next task name is mandatory.</description>
+        <errorConditionFormula>AND(ISPICKVAL(Type__c, &apos;LOI&apos;), ISBLANK( Next_Task_Name__c ))</errorConditionFormula>
+        <errorMessage>For Task Setup of type LOI, Next Task Name is mandatory.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>PARALLEL_TASK_USER</fullName>
+        <active>true</active>
+        <description>Parallel Tasks must have the Assigned Task to User field populated</description>
+        <errorConditionFormula>AND(Is_Parallel__c == true, ISBLANK( Assign_Parallel_Task_To__c ) )</errorConditionFormula>
+        <errorMessage>Assign Parallel Task To cannot be null for parallel task setup</errorMessage>
+    </validationRules>
+</CustomObject>

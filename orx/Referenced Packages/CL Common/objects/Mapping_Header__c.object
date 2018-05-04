@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If active, batch job will pick this record for processing.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If active, batch job will pick this record for processing.</inlineHelpText>
+        <label>Active</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Batch_Size__c</fullName>
+        <defaultValue>200</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Size of a batch to be used by each header job thread.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Size of a batch to be used by each header job thread.</inlineHelpText>
+        <label>Batch Size</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Dynamic_Query__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Source Criteria query which will be used to form a source record set to perform Data Mapping.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Source Criteria query which will be used to form a source record set to perform Data Mapping.</inlineHelpText>
+        <label>Source Criteria</label>
+        <referenceTo>Dynamic_Query__c</referenceTo>
+        <relationshipLabel>Mapping Headers</relationshipLabel>
+        <relationshipName>Mapping_Headers</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Process_Completion_Identifier_Field__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Salesforce API name of a field, present on source object, which should be used as identifier for data mapping process completion. This field will be updated by batch job as to denote record mapping is done for source record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Salesforce API name of a field, present on source object, which should be used as identifier for data mapping process completion. This field will be updated by batch job as to denote record mapping is done for source record.</inlineHelpText>
+        <label>Process Completion Identifier Field</label>
+        <length>255</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Relationship_Field_API_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>API name of source lookup field present on target object</description>
+        <externalId>false</externalId>
+        <inlineHelpText>API name of lookup field that defines a relation between source object and target object.</inlineHelpText>
+        <label>Relationship Field API Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Source_Object_API_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>API name of source object</description>
+        <externalId>false</externalId>
+        <inlineHelpText>API name of source object to be mapped into target object.</inlineHelpText>
+        <label>Source Object API Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Target_Object_API_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>API name of target object</description>
+        <externalId>false</externalId>
+        <inlineHelpText>API name of target object in which Source object records will be mapped.</inlineHelpText>
+        <label>Target Object API Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Mapping Header</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Header Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Mapping Headers</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

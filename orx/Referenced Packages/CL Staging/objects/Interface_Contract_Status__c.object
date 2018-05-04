@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Arrangement_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Arrangement Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Broken Promise</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Promise Active for EOM</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Promise active for LTA</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Contract_External_ID__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Contract External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contract_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Status of the Account expected values are :
+Pending Approval
+Active - Good Standing
+Active - Bad Standing
+Active - Matured
+Approved
+Canceled
+Closed - Obligations met
+Closed- Written Off
+Closed - Refinanced
+Partial Application
+Closed - Premature</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Status of the Account expected values are :
+Pending Approval
+Active - Good Standing
+Active - Bad Standing
+Active - Matured
+Approved
+Canceled
+Closed - Obligations met
+Closed- Written Off
+Closed - Refinanced
+Partial Application
+Closed - Premature</inlineHelpText>
+        <label>Contract Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active - Bad Standing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Active - Good Standing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Active - Matured</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Canceled</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Closed - Obligations met</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Closed - Premature</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Closed - Refinanced</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Closed- Written Off</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Invalid</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Partial Application</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Pending Approval</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Dispute_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Dispute Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>EDR Active</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>EDR Finalised</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>EDR Lodged</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>IDR Active</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>IDR Finalized</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>IDR Lodged</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>External_ID__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>File_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>File Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Active Default Notice</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Claim</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Closed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Default Notice Expired</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Default Notice Instructed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Default Notice Requested</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>First Payment Default</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Judgement Entered</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Judgement Filed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Judgment Instructed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Judgment Requested</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Legal</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>New Work</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Not in Arrears</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>PIF</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>POS auction date set</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>POS form 14/Section 130 expired</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>POS form 14/Section 130 sent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>POS Instructed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>POS Obtained</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>POS Requested</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>POS Sale achieved</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Recall</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Shortfall</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SIF</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SKIP</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SOC Instructed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SOC Issued</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SOC Requested</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SOC Served</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>WOP Instructed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>WOP Requested</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Hardship_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Hardship Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Hardship Entered</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hardship Expired</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hardship extension of term (Active)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hardship Part Payment Moritorium</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hardship Payment Moritorium</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hardship Requested</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hardship Time to sell arragement (Active)</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>POA_ATP_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>POA/ATP Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ATP In Place</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>POA In Place</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Source_ID__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Source ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Source_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Source Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sync_Processed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Sync Processed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Interface Contract Status</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>ICS-{00000000}</displayFormat>
+        <label>Interface Contract Status Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Interface Contract Status</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

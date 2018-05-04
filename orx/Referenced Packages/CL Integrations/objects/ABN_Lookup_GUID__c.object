@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>GUID of the organization registered with Australian Govt. to use ABN Lookup Web Services.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>GUID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Guid of an Organization.</description>
+        <externalId>false</externalId>
+        <label>GUID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>ABN Lookup GUID</label>
+    <visibility>Public</visibility>
+</CustomObject>

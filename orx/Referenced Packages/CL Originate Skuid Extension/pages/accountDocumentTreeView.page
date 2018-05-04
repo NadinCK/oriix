@@ -1,0 +1,6 @@
+<apex:page docType="html-5.0" showHeader="false" standardStylesheets="false"
+           standardController="Account">
+    <apex:outputpanel >
+        <apex:include pageName="genesisExtn__accountDocument"/>
+    </apex:outputpanel>
+</apex:page>

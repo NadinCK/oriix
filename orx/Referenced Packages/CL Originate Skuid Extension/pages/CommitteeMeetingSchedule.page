@@ -1,0 +1,4 @@
+<apex:page id="CommitteeMeetingSchedule" standardController="genesis__Meeting_Schedule__c" showHeader="false"
+           sidebar="false" readonly="true" extensions="skuid.Redirects" > 
+    <skuid:page page="MeetingSchedule" />
+</apex:page>

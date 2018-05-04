@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Application__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Application</label>
+        <referenceTo>Applications__c</referenceTo>
+        <relationshipLabel>Application Status History</relationshipLabel>
+        <relationshipName>Application_Status_History</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Changed_On__c</fullName>
+        <deprecated>false</deprecated>
+        <description>DateTime on which the application status is changed</description>
+        <externalId>false</externalId>
+        <inlineHelpText>DateTime on which the application status is changed</inlineHelpText>
+        <label>Changed On</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Current_Status_Duration__c</fullName>
+        <deprecated>false</deprecated>
+        <description>If the application is being process, then how much time in minutes elapsed between NOW and the when the application status was changed, else this will be 0</description>
+        <externalId>false</externalId>
+        <formula>IF( Is_Latest_Status__c ,ROUND( ( NOW() -  Changed_On__c ) * 24 , 2) , 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>If the application is being process, then how much time in minutes elapsed between NOW and the when the application status was changed, else this will be 0</inlineHelpText>
+        <label>Current Status Duration(till now)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Is_Latest_Status__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If the application is being processes and it is the most recent status change record, then its true else false. This value is set based on the values provided in Closed Status in Org Parameters.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If the application is being processes and it is the most recent status change record, then its true else false. This value is set based on the values provided in Closed Status in Org Parameters.</inlineHelpText>
+        <label>Is Latest Status</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>New_Value__c</fullName>
+        <deprecated>false</deprecated>
+        <description>New Status of application</description>
+        <externalId>false</externalId>
+        <inlineHelpText>New Status of application</inlineHelpText>
+        <label>New Status</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Old_value__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Old Status of application</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Old Status of application</inlineHelpText>
+        <label>Old Status</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Stage__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stage of application</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Stage of application</inlineHelpText>
+        <label>Stage</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time_spent_in_new_status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>If it is not the most recent status change record, then the time elapsed between the status change is calculated in minutes and recorded in this field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If it is not the most recent status change record, then the time elapsed between the status change( that is time when the new record is created minus changed on date/time value) is calculated in minutes and recorded in this field.</inlineHelpText>
+        <label>Time Spent In New Status</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Time__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Represents the total time an applications spends in a particular status(that is, the new status value on the record). It is the sum of Total time spent in new status + current status duration.</description>
+        <externalId>false</externalId>
+        <formula>Time_spent_in_new_status__c  +  Current_Status_Duration__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Represents the total time an applications spends in a particular status(that is, the new status value on the record). It is the sum of Total time spent in new status + current status duration.</inlineHelpText>
+        <label>Total Time</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Application Status History</label>
+    <nameField>
+        <displayFormat>ASH-{00000000}</displayFormat>
+        <label>Application Status History Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Application Status History</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>
