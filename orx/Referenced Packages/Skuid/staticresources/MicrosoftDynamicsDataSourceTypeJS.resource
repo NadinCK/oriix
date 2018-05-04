@@ -1,1 +1,0 @@
-!function(a){if(!a.dataSource.getType("MicrosoftDynamics")){new a.dataSource.core.ODataDataSourceTypeBase({name:"MicrosoftDynamics",coerceSaveItemRequest:function(a,b){a.headers["Content-ID"]=""+b.key}})}}(skuid);

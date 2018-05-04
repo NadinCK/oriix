@@ -1,1 +1,0 @@
-<apex:page controller="skuid.Ui" action="{!initializeSkuidDependencies}" showheader="false" sidebar="false" />

@@ -1,4 +1,0 @@
-<apex:page showHeader="true" sidebar="false" readonly="true" docType="html-5.0" 
-    title="Application's Parallel Tasks"  >
-    <skuid:page page="ParallelTaskTab" />
-</apex:page>

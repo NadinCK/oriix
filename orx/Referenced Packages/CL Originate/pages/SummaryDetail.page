@@ -1,3 +1,0 @@
-<apex:page showHeader="false" sidebar="false" applyBodyTag="false">
-    <apex:detail inlineEdit="true" title="false" />
-</apex:page>
